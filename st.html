@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Travel Information</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+
+
+			body{
+				background-image: url(https://wallpaperaccess.com/full/185289.jpg);
+				background-position: center;
+				background-size: cover;
+				font-family: sans-serif;
+				margin-top: 40px;
+			}
+
+
+			/*.regform{
+				width: 800px;
+				background-color: rgb(0, 0, 0.6);
+				margin: auto;
+				color: #FFFFFF;
+				padding: 10px 0px 10px 0 px;
+				text-align: center;
+				border-radius: 15px 15pc 0px opx;
+				opacity: 0.7;
+
+			}
+*/
+
+			.main{
+				width: auto;
+				margin: auto ;
+				
+
+			}
+
+			  form{
+				 padding: 0px;
+			  }
+
+
+			 #name{
+			 	width: 100%;
+			 	height: 100px;
+
+			 }
+			.name{
+				margin-left: 25px;
+				margin-top: 30px;
+				width: 125px;
+				color: white;
+				font-size: 18px;
+				font-weight: 700;
+
+			}
+			.Firstname{
+				position: relative;
+				left: 200px;
+				top: -37px;
+				line-height: 40px;
+				border-radius: 6px;
+				padding: 0 22px;
+				font-size: 16px;
+
+			}
+
+			.Lastname{
+				position: relative;
+				left: 200px;
+				top: -37px;
+				line-height: 40px;
+				border-radius: 6px;
+				padding: 0 22px;
+				font-size: 16px;
+				color: whitesmoke;
+			}
+
+			
+			
+
+			.email{
+				position: relative;
+				left: 200px;
+				top: -37px;
+				line-height: 40px;
+				width: 480px;
+				border-radius: 6px;
+				padding: 0 22px;
+				font-size: 16px;
+				color: #555;
+			}
+
+
+			.code{
+				position: relative;
+				left: 200px;
+				top: -37px;
+				line-height: 40px;
+				width: 200px;
+				border-radius: 6px;
+				padding: 0 22px;
+				font-size: 16px;
+				color: #555;
+			}
+
+
+			
+			.areacode{
+				position: relative;
+				color: #E5E5E5;
+				text-transform: capitalize;
+				font-size: 16px;
+				left: 54px;
+				top: -4px;
+			}
+
+
+			
+
+			.option{
+				position: relative;
+				left: 200px;
+				top: -37px;
+				line-height: 40px;
+				width: 255px;
+				border-radius: 6px;
+				padding: 0 22px;
+				font-size: 16px;
+				color: whitesmoke;
+			}
+
+
+			.option option{
+				font-size: 20px;
+			}
+
+
+			#maritalstatus{
+				margin-left: 25px;
+				color: white;
+				font-size: 18px;
+			}
+
+			.radio{
+				display: inline-block;
+				padding-right: 70px;
+				font-size: 15px;
+				margin-left: 25px;
+				margin-top: 15px;
+				color: white;
+			}
+
+			.radio input{
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				cursor: pointer;
+				outline: none;
+			}
+
+
+			button{
+				background-color: #3BAF9F;
+				display: block;
+				margin: 20px 0px 0px 20px;
+				text-align: center;
+				border-radius: 12px;
+				border: 2px solid #366473;
+				padding: 14px 110px;
+				outline: none;
+				color: white;
+				cursor: pointer;
+				transition: 0.25px;
+			}
+
+			button:hover{
+				background-color: #5390F;
+
+			}
+            .form-style-8{
+	font-family: 'Open Sans Condensed', arial, sans;
+    background-color: rgb(0, 0, 0.5);
+    opacity:0.7;
+	width: 500px;
+	padding: 30px;
+	margin: 0px auto 50px;
+	box-shadow: 0px 0px 15px rgba(228, 222, 222, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(228, 226, 226, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(231, 227, 227, 0.22);
+
+	}
+.form-style-8 h2{
+	background: #4D4D4D;
+	text-transform: uppercase;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #fcf9f9;
+	font-size: 28px;
+	font-weight: 100;
+	padding: 20px;
+	margin: -30px -30px 30px -30px;
+}
+.form-style-8 input[type="text"],
+.form-style-8 input[type="date"],
+.form-style-8 input[type="datetime"],
+.form-style-8 input[type="email"],
+.form-style-8 input[type="number"],
+.form-style-8 input[type="search"],
+.form-style-8 input[type="time"],
+.form-style-8 input[type="url"],
+.form-style-8 input[type="password"],
+.form-style-8 select 
+{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    color: #555;
+	outline: none;
+	display: block;
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+}
+.form-style-8 input[type="button"], 
+.form-style-8 input[type="submit"]{
+	-moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	box-shadow: inset 0px 1px 0px 0px #45D6D6;
+	background-color: #2CBBBB;
+	border: 1px solid #27A0A0;
+	display: inline-block;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	padding: 8px 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.form-style-8 input[type="button"]:hover, 
+.form-style-8 input[type="submit"]:hover {
+	background:linear-gradient(to bottom, #34CACA 5%, #30C9C9 100%);
+	background-color:#34CACA;
+}
+
+label{
+    color: whitesmoke;
+}
+p{
+	color: whitesmoke;
+}
+</style>
+</head>
+
+
+<body>
+<div class="main">
+    <div class="form-style-8">
+    <h2>Fill the given information</h2>
+  <form>
+    <p >Name:</p><input type="text" name="field1" required placeholder="Full Name" label="name">
+    <p >Email:</p><input type="email" name="field2" required placeholder="Email" />
+    <p >Phone no:</p><input type="number" required placeholder="xxx-xxx-xxx" size=10>
+    <p >Number of Adults:</p><input type="number"  name="adults" required="" placeholder="Number of adults">
+	<p> Number of Children:</p><input type="number" name="children" required="" placeholder="Number of children">
+	<p >Departing:</p><input type="date" name="checkin" required placeholder="checkin">
+	<p >Returning:</p><input type="date" name="checkout"  required placeholder="checkout">
+	<br><br>
+    <input type="button" value="Confirm Booking"  onclick="alert('Do you want to confirm booking?')">
+	<input type="button" value="Cancel" ><br>
+	<input type="button" value="Next" onclick="location.href='pr2.html';" >
+	
+	
+  </form>
+</div>
+</div>
+</body>
+</html>
